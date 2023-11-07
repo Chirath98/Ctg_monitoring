@@ -1,0 +1,48 @@
+<!-- Enter New Patient Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" style="align-content: center;"> Add New Patient</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form action="{{ url_for('insert')}}" method="POST">
+                    <div class="form-group">
+                        <label>Bed Number</label>
+                        <input type="text" name="bed_no" class="form-control" id="bed_no"
+                            placeholder="Enter Bed Number">
+                    </div>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input name="phone" type="text" class="form-control" id="phone"
+                            placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label>Guardian Name</label>
+                        <input name="guardian" type="text" class="form-control" id="guardian"
+                            placeholder="Enter Guardian Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Comments</label>
+                        <textarea name="comments" class="form-control" id="comments"
+                            placeholder="Enter Comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

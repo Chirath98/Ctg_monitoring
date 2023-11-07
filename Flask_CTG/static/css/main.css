@@ -1,0 +1,207 @@
+/* main.css */
+/* body {
+    background-color: #f0f0f0;
+} */
+
+/* Style the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 150px;
+    padding-top: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* Adjust the height to match your design */
+}
+
+.btn-clear {
+    margin-left: 5px;
+    /* Adjust the margin to control the spacing */
+}
+
+.normal {
+    border-radius: 5px;
+}
+
+.suspect {
+    border-radius: 5px;
+}
+
+.pathological {
+    border-radius: 5px;  
+}
+
+
+.features {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: var(--c5);
+    /* padding: 3.2rem 0; */
+}
+
+.features .row {
+    width: 90%;
+    max-width: 200rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 3.2rem 0;
+}
+
+.features .row .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0.8rem 1.6rem;
+    text-align: center;
+}
+
+.features .row .col i {
+    font-size: 5rem;
+    color: var(--c2);
+}
+
+
+.working-holder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.working-holder .row {
+    display: flex;
+    width: 90%;
+    max-width: 200rem;
+    flex-direction: column;
+}
+
+.working-holder h3 {
+    align-self: flex-start;
+    background: var(--c5);
+    padding: 1.6rem 3.2rem;
+    width: 100%;
+}
+
+.working {
+    position: relative;
+    width: 100%;
+}
+
+.working::after {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    background: var(--c4);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.3rem;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: -1rem;
+    background: var(--c3);
+    top: 1.6rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 1.6rem;
+    width: 0;
+    z-index: 1;
+    right: 3rem;
+    border: solid var(--c4);
+    border-width: 1rem 0 1rem 1rem;
+    border-color: transparent transparent transparent var(--c4);
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 1.6rem;
+    width: 0;
+    z-index: 1;
+    left: 3rem;
+    border: solid var(--c4);
+    border-width: 1rem 1rem 1rem 0;
+    border-color: transparent var(--c4) transparent transparent;
+}
+
+.right::after {
+    left: -1rem;
+}
+
+
+.smart{
+    margin-top: 80px;
+    color: #003049;
+}
+
+.smart1 {
+    background-image: url('../img/svg/wave2.svg');
+    margin-top: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+}
+
+.smart-img{
+    margin-top: -20px;
+}
+
+.alert-info {
+    background-color: #0f4c5c;
+    color: white;
+    /* You can also specify other styles like text color, border, etc. */
+}
+
+.custom-ul {
+    list-style: none;
+    padding-left: 0;
+    /* Remove left padding */
+}
+
+.alert-warning {
+    background-color: #ffba08;
+    color: black;
+    /* You can also specify other styles like text color, border, etc. */
+}
+
+.alert-danger {
+    background-color: #d00000;
+    color: black;
+    /* You can also specify other styles like text color, border, etc. */
+}
+
+.alert-success {
+    background-color: #27a300;
+    color: black;
+    /* You can also specify other styles like text color, border, etc. */
+}
